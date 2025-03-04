@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Список бронирований</title>
+</head>
+<body>
+    <h1>Список бронирований</h1>
+    <ul>
+        {% for reservation in reservations %}
+        <li>Клиент: {{ reservation.customer.name }}, Столик: №{{ reservation.table.number }}, Дата: {{ reservation.date }}, Время: {{ reservation.time }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

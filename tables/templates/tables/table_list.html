@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Список столиков</title>
+</head>
+<body>
+    <h1>Список столиков</h1>
+    <ul>
+        {% for table in tables %}
+        <li>Столик №{{ table.number }} - Вместимость: {{ table.capacity }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
